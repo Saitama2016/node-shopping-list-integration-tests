@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: ObXR64e59oWImGxjF+gIbXGhpYfJzNyJPAcGmecPTVvXtCOeaEsxbDRmwSHA6XqJXy+Y6S7d/7PK8MremzLV9q2oR3wxoqrOPrCPflY57xsyliBg8+wpMPgoGfTQYOjeDv5u/APm0BDdSZmv8iWzHkuF9QHemMWaJF+GDyHBgD2wR2V2A+SRxBT9jofdLltSsmHTr6vxC1D1hnCwmZb4tLYMuihOQWF92UvvyKzZmb+psv6qJnnl892dPX7bYHwC9d6LL6v+tPdvDzGJ/wtGPjSh0AoiIi19MEd75aPCZOysYYeulU/Zp4GZko8iUqA22IC2kDIPMwDQ3mg9Dzm4tKHIYOQX79b5LpVGFk5E40nlxTx+MaVziGZJ07hKY9yaF8SFYS+263ZxVVSsfWfOI8SJTcJRrmc2VK+kkyMv/x92W0qwhV7mS33UdJzranQMm/BU10ZlxeujMxaV04xlJfi9HwAg6K8QlFv9lq/jrTTW5UsGIWHvQE2qsPhOzLRGYXIXcop1pEbnoktX4AbumK8yHKlnTBK37MOhhZnnH4M3tSPDLO8J6Q1FEihZ85Xpvm8z3eUZeNqw1XV0YuZkBTqqwRQ/aqW+YbQ80sMQqj9zblA0WLXRV0lJtHjQRZRiNd9v7+sAyP4QkGNbNI9Wk0EfeRO3oucS6YYl/iw+D3E=
+  app: dry-shelf-26406
+  on:
+    repo: Saitama2016/node-shopping-list-integration-tests
