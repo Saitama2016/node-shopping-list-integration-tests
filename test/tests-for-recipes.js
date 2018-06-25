@@ -71,9 +71,6 @@ describe("Recipes", function() {
         
             .then(function(res) {
                 expect(res).to.have.status(204);
-                expect(res).to.be.json;
-                expect(res.body).to.have.a("object");
-                expect(res.body).to.deep.equal(updateData);
             })
     });
 
