@@ -59,15 +59,13 @@ describe("Recipes", function() {
             name: "Japanese Ramen", 
             ingredients: [ "ramen noodles", "cherry tomatoes", "seaweed", "egg" ] 
         };
-        return (
-            chai
-            .request(app)
+        return chai.request(app)
             .get("/recipes")
             .then(function(res) {
                 updateData.id = res.body[0].id;
-                return chai
-                .request(app)
-                .post(`/recipes/${updateData.id}`)
+                
+                return chai.request(app)
+                .put(`/recipes/${updateData.id}`)
                 .send(updateData);
             })
         
@@ -77,7 +75,6 @@ describe("Recipes", function() {
                 expect(res.body).to.have.a("object");
                 expect(res.body).to.deep.equal(updateData);
             })
-        ) 
     });
 
     it("should delete items on DELETE", function() {
